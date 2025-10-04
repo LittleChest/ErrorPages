@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ฅ^•ﻌ•^ฅ</title>
+    <style>
+      @import url(./css/chess.css);
+      body {
+        background-image: repeating-conic-gradient(#c4deff 0% 25%, #fff 0% 50%);
+      }
+      img {
+        z-index: 2;
+      }
+      .c {
+        user-select: none;
+        width: 300px;
+        height: 65px;
+        font-size: 0;
+        line-height: 0;
+        background-color: #fafafa;
+        border: 1px solid #e0e0e0;
+        box-sizing: border-box;
+        margin-top: -33px;
+        transform: scale(1.6);
+        transform-origin: top;
+        z-index: 1;
+      }
+      .r {
+        color: rgba(25, 60, 110, 0.75);
+      }
+      @media (orientation: landscape) {
+        img {
+          margin-top: -64px;
+        }
+      }
+      @media (orientation: portrait) {
+        .c {
+          transform: scale(2.4);
+        }
+      }
+      .main-wrapper {
+        margin: -1px 0 0 -1px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/Holding.webp" draggable="false" />
+    <div class="c">::CAPTCHA_BOX::</div>
+    <a
+      class="r"
+      href="javascript:(()=>{var a=document.querySelector('a.r');a.href='https://github.com/LittleChest/LittleChest/issues/new?title=[CAPTCHA]%20&body=`Ray%20ID:%20::RAY_ID::`';a.target='_blank';a.innerHTML='Tap again to report the issue';})();"
+      rel="nofollow noreferrer"
+      >Ray&nbsp;ID:&nbsp;::RAY_ID::</a
+    >
+  </body>
+</html>

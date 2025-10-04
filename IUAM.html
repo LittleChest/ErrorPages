@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ฅ^•ﻌ•^ฅ</title>
+    <style>
+      @import url(./css/chess.css);
+      body {
+        background-image: repeating-conic-gradient(#67c1fb 0% 25%, #fff 0% 50%);
+      }
+      img {
+        width: calc(20vh + 10vw);
+        animation: rotateAnimation 0.5s infinite alternate;
+        animation-timing-function: linear;
+      }
+      .r {
+        color: rgba(20, 70, 90, 0.75);
+      }
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotate(-5deg);
+        }
+        49.99% {
+          transform: rotate(-5deg);
+        }
+        50.01% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: rotate(10deg);
+        }
+      }
+      .main-wrapper {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/Queen.webp" draggable="false" />
+    ::IM_UNDER_ATTACK_BOX::
+    <a
+      class="r"
+      href="javascript:(()=>{var a=document.querySelector('a');a.href='https://github.com/LittleChest/LittleChest/issues/new?title=[IUAM]%20&body=`Ray%20ID:%20::RAY_ID::`';a.target='_blank';a.innerHTML='Tap again to report the issue';})();"
+      rel="nofollow noreferrer"
+      >Ray&nbsp;ID:&nbsp;::RAY_ID::</a
+    >
+  </body>
+</html>

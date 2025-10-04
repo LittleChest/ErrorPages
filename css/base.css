@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: g, arial;
+}
+img {
+  user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+.r {
+  font-size: calc(0.9em + 0.2vh);
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+}

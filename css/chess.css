@@ -1,0 +1,8 @@
+@import url(./base.css);
+@font-face {
+  font-family: g;
+  src: url(../fonts/minify.woff2) format("woff2");
+}
+body {
+  background-size: 175px 175px;
+}

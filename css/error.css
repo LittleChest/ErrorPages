@@ -1,0 +1,21 @@
+@import url(./line.css);
+@media (orientation: portrait) {
+  img {
+    max-width: 25%;
+  }
+}
+@media (orientation: landscape) {
+  img {
+    max-width: 10%;
+  }
+  div {
+    max-width: 30%;
+  }
+  .cf-error-details {
+    max-width: 100%;
+  }
+}
+.cf-error-details p,
+.cf-error-details ul {
+  display: none;
+}

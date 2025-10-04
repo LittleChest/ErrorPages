@@ -1,0 +1,14 @@
+@import url(./line.css);
+@media (orientation: portrait) {
+  img {
+    max-width: 40%;
+  }
+}
+@media (orientation: landscape) {
+  img {
+    max-width: 15%;
+  }
+  div {
+    max-width: 25%;
+  }
+}
