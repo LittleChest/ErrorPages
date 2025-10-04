@@ -21,8 +21,6 @@
         background-color: #fafafa;
         border: 1px solid #e0e0e0;
         box-sizing: border-box;
-        margin-top: -33px;
-        transform: scale(1.6);
         transform-origin: top;
         z-index: 1;
       }
@@ -31,16 +29,36 @@
       }
       @media (orientation: landscape) {
         img {
-          margin-top: -64px;
+          margin-top: -60px;
+          width: 300px;
+        }
+        .c {
+          transform: scale(1.4);
+          margin-top: -23px;
         }
       }
       @media (orientation: portrait) {
+        img {
+          width: 225px;
+        }
         .c {
-          transform: scale(2.4);
+          transform: scale(1.1);
+          margin-top: -17px;
         }
       }
       .main-wrapper {
         margin: -1px 0 0 -1px;
+      }
+      @media (max-width: 319px) {
+        img {
+          width: 50%;
+        }
+        .c {
+          margin-top: 0px;
+          width: 80%;
+          height: auto;
+          aspect-ratio: 300 / 65;
+        }
       }
     </style>
   </head>
