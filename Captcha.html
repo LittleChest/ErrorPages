@@ -8,9 +8,20 @@
       @import url(./css/chess.css);
       body {
         background-image: repeating-conic-gradient(#c4deff 0% 25%, #fff 0% 50%);
+        --img-w: clamp(180px, calc(17.5vw + 160px), 350px);
+      }
+      @media (min-width: 500px) { .c { transform: scale(1.2); } }
+      @media (min-width: 650px) { .c { transform: scale(1.3); } }
+      @media (min-width: 800px) { .c { transform: scale(1.4); } }
+      @supports (transform: scale(tan(atan2(1px, 1px)))) {
+        .c {
+          transform: scale(clamp(0.8, calc(tan(atan2(100vw, 1px)) * 0.0005 + 0.85), 1.5));
+        }
       }
       img {
         z-index: 2;
+        margin-top: -65px;
+        width: var(--img-w);
       }
       .c {
         user-select: none;
@@ -23,42 +34,13 @@
         box-sizing: border-box;
         transform-origin: top;
         z-index: 1;
+        margin-top: calc(var(--img-w) * -33 / 448);
       }
       .r {
         color: rgba(25, 60, 110, 0.75);
       }
-      @media (orientation: landscape) {
-        img {
-          margin-top: -60px;
-          width: 300px;
-        }
-        .c {
-          transform: scale(1.4);
-          margin-top: -23px;
-        }
-      }
-      @media (orientation: portrait) {
-        img {
-          width: 225px;
-        }
-        .c {
-          transform: scale(1.1);
-          margin-top: -17px;
-        }
-      }
       .main-wrapper {
         margin: -1px 0 0 -1px;
-      }
-      @media (max-width: 319px) {
-        img {
-          width: 50%;
-        }
-        .c {
-          margin-top: 0px;
-          width: 80%;
-          height: auto;
-          aspect-ratio: 300 / 65;
-        }
       }
     </style>
   </head>
